@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 파비콘 -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/basic.css">
+    <!-- 해상도 500px 이상 css-->
     <link rel="stylesheet" href="./css/grid500.css">
+    <!-- 해상도 768px 이상 css-->
     <link rel="stylesheet" href="./css/grid768.css">
+    <!-- 해상도 1200px 이상 css-->
     <link rel="stylesheet" href="./css/grid1200.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>수익이 아닌 사람을 위한 인터넷</title>
@@ -263,29 +267,6 @@
             </div>
         </footer>
     </section>
-    <script>
-        let elNav = document.querySelector('nav');
-        let elSubNav = document.querySelector('.sub-nav');
-        let elBtn = document.querySelector('nav button');
-        let elSubNavFooter = document.querySelector('.sub-nav-footer')
-        function tglBtn(){
-            elBtn.classList.toggle('active');
-        }
-        function tglNav(){
-            elNav.classList.toggle('active');
-        }
-        function tglSubNav(){
-            elSubNav.classList.toggle('active');
-        }
-        function tglBtnNav(self){
-            self.classList.toggle('close');
-        }
-        function tglH2(self){
-            self.classList.toggle('active');
-        }
-        function tglH3(self){
-            self.classList.toggle('active');
-        }
-    </script>
+    <script src="./js/toggle.js"></script>
 </body>
 </html>

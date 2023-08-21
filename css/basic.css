@@ -29,7 +29,6 @@
     border-bottom:1px solid #111;
     background:#fff;
 }
-
 .header .grid{
     row-gap:48px;
 }
@@ -53,6 +52,7 @@ h1 a{
     justify-content:center;
     align-items:flex-end;
     grid-column:4/5;
+    cursor:pointer;
 }
 .btn-nav::before,.btn-nav::after{
     content:'';
@@ -83,7 +83,6 @@ h1 a{
 .btn-nav.close p{
     transform:scaleX(0);
 }
-
 nav{
     display:none;
     flex-flow:column nowrap;
@@ -128,6 +127,7 @@ nav button:hover{
     padding:11px 0;
     display:flex;
     justify-content:space-between;
+    cursor:pointer;
 }
 .main-nav>li h2::after{
     content:'';
@@ -149,9 +149,10 @@ nav button:hover{
 .sub-nav{
     display:none;            
     grid-template-columns:repeat(4, 1fr);
-    column-gap:24px;            
+    column-gap:24px;
+    padding:20px 0;     
 }
-.sub-nav.active{
+.main-nav ul.active{
     display:grid;
 }
 .sub-nav>li{
@@ -165,13 +166,12 @@ nav button:hover{
 .sub-nav h3{
     font-size:14px;
 }
-
 .sub-nav p{
     display:none;
-    font-size:11px;
+    font-size:14px;
+    line-height:18px;
     padding-left:15px;
 }
-
 .sec01{
     padding-top:100px;
 }
@@ -193,7 +193,7 @@ nav button:hover{
 .art01 button{
     display:block;
     margin:0 auto;
-    border:none;
+    border:1px solid #0075c2;
     border-radius:5px;
     padding:16px;
     background:#0075c2;
@@ -201,7 +201,10 @@ nav button:hover{
     font-size:15px;
     color:#fff;
     cursor:pointer;
-
+}
+.art01 button:hover{
+    background:transparent;
+    color:#0075c2;
 }
 .art02 h2{
     display:none;
@@ -265,6 +268,9 @@ nav button:hover{
     text-decoration:underline;
     text-decoration-color:#0075c2;
 }
+.art06 a:hover,.art07 a:hover,.art08 a:hover{
+    text-decoration:none;
+}
 .art06 p,.art07 p,.art08 p{
     text-align:center;
     line-height:1.4em;
@@ -304,8 +310,9 @@ nav button:hover{
     margin-bottom:5px;
 }
 .art10 input[type="submit"]:hover{
-    background: #ddd;
+    background:#fff;
     color:#111;
+    cursor:pointer;
 }
 .art10 p{
     text-align:center;
@@ -356,6 +363,15 @@ nav button:hover{
 }
 .sns li:first-child{
     margin-bottom:35px;
+}
+.sns a{
+    display:inline-block;
+    margin-right:0.8em;
+    color:#fff;
+}
+.sns i{
+    font-size:16px;
+    color:#fff;
 }
 .info-footer form{
     margin-bottom:20px;

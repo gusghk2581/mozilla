@@ -20,7 +20,7 @@
         order:2;
         width:170px;
         margin-bottom:0;
-        animation: bound 0.5s 0.5s forwards;
+        animation:bound 0.5s 0.5s forwards;
     }
     .main-nav{
         order:1;
