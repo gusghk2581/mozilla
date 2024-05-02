@@ -85,9 +85,6 @@
     .art01 button{
         margin:0;
     }
-    .art03 .img-box{
-        margin-right:0;
-    }
     .art03 h2,.art03 p{
         grid-column: 5/9;
     }

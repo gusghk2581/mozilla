@@ -22,4 +22,7 @@
     .nav-sub-footer{
         display:block;
     }
+    .art03 .img-box{
+        grid-row:1/3;
+    }
 }

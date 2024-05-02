@@ -152,6 +152,7 @@ nav button:hover{
     column-gap:24px;
     padding:20px 0;     
 }
+
 .main-nav ul.active{
     display:grid;
 }
@@ -218,16 +219,19 @@ nav button:hover{
     grid-column:1/5;
 }
 .art03 .img-box{
+    order:1;
     width:320px;
     margin:0 auto;
 }
 .art03 h2{
+    order:2;
     padding:0 48px;
     font-weight:700;
     font-size:36px;
     text-align:center;
 }
 .art03 p{
+    order:3;
     text-align:center;
     line-height:1.4;
 }
